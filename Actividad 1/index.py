@@ -46,8 +46,26 @@ def zodiacal():
         print("Capricornio")
 
 
+def fact(k):
+    if k == 0:
+        return 1
+    return k * fact(k - 1)
+
+
+def calcE():
+    limite = 10
+    n = 0
+    e = 0
+    while n < limite:
+        e += 1 / fact(n)
+        n += 1
+    print("e :", e)
+
+
 square()
 triangle()
 circle()
 
 zodiacal()
+
+calcE()
